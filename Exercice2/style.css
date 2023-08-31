@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+ * {
+	 margin: 0;
+	 padding: 0;
+	 font-family: 'Roboto', sans-serif;
+	 box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	 max-width: 100%;
+}
+
+li {
+    list-style-type: circle;
+    margin: .2em 1.2em;
+}
+
+html, body {
+	 height: 100%;
+}
+
+.content{
+	position:fixed;
+	width:80%;
+	height:100%;
+	padding: 15%;
+	margin-left:20%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("./asset/bg.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+
+.card {
+	background: #fff;
+	width: 23rem;
+	margin:0 .75em 3em;
+	box-shadow: 0 0 10px 1px #999;
+	position: relative;
+}
+
+.card__header {
+	object-fit: cover;
+	min-height: 18rem;
+	max-height: 18rem;
+}
+
+.card__food {
+	 color: #212129;
+	 font-weight: normal;
+	 text-transform: uppercase;
+	 letter-spacing: 0.1;
+	 margin: .6em .6em .3em .6em;
+	 text-align: center;
+	 font-size: 1.5em;
+	 height: 2rem;
+}
+
+.card__sub {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 1em;
+	padding-right: 1em;
+	height: 1.5rem;
+}
+
+.card__detail {
+	color: #9b9b9b;
+	font-size: smaller;
+}
+
+.card__content {
+	font-size: smaller;
+	text-align: justify;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 3rem;
+}
+
+.card__info {
+	margin-bottom: 1em;
+}
+
+.card__btn {
+	display: block;
+	background: #17bebb;
+	color: #fff;
+	position: absolute;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	text-align: center;
+	padding: .6em;
+	transition: 250ms;
+	margin-top: 1em;
+	bottom:0rem;
+	width:inherit;
+}
+
+.card__btn:hover {
+	 background: #ffba39;
+	 transition: 250ms;
+}
+
+/*
+@media screen and (min-width: 35em) {
+    .content {
+		flex-direction: row;
+		flex-wrap: wrap; 
+        justify-content: center;
+		align-items: stretch;
+    }
+
+    .card {
+        flex: 0 0 auto;
+    }
+}
+
+.ingredient {
+	padding-right: 1em;
+}
+*/
+.quantity {
+	font-style: italic;
+	color: #999;
+}
+
+
+.sidenav {
+	position: fixed;
+	width: 20%;
+	height:100%;
+	background:rgba(23, 190, 187, .85);
+	top:0;
+	left: 0;
+	padding-top: 13em;
+	padding-left: 2em;
+	font-size: larger;
+}
+
+.pattern {
+	position: fixed;
+	width: 20%;
+	height:100%;
+	top:0;
+	left: 0;
+	padding-top: 10em;
+	padding-left: 2em;
+	font-size: larger;
+	background-color:silver;
+	background-image:
+	radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+	radial-gradient(circle at 0    150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+	radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
+	radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent),
+	radial-gradient(circle at 0    50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
+	background-size: 100px 50px;
+
+}
+
+.sidenav h4 {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-family: 'lobster', cursive;
+	font-size: larger;
+}
+
+.sidenav li {
+	padding-bottom: .5em;
+	font-family: 'lobster', cursive;
+	
+}
+
+.filters {
+	font-style: italic;
+	font-size: smaller;
+	margin-top:1em;
+	margin-bottom: 2em;
+}
+
+.filters i {
+	font-family: 'lobster';
+	color:whitesmoke;
+	font-style: normal;
+}
+
+h2{
+	width:80%;
+	margin-left: 20%;
+	position:absolute;
+	z-index: 4;
+	color: white;
+	text-shadow: 1px 1px black;
+	font-family: 'lobster', cursive;
+	text-align: center;
+	padding: .2em;
+	font-size:7em
+}

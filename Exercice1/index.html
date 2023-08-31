@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>A Star Wars Exercice !</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+ 
+        <section >
+
+            <nav class="sidenav">
+
+                <h4>Star Wars Characters</h4>
+     
+                <div class='filters'>
+                    <i data-filter='any'>[ All / </i>
+                    <i data-filter='light'>Light Side / </i>
+                    <i data-filter='dark'>Dark Side ] </i>
+                </div>
+
+                <ul>
+                   <!-- dynamic rendering of character names according to the selected filter-->
+                </ul>
+
+            </nav>
+
+        </section>
+
+        <!-- simple template to format item list using a character name -->
+        <template id="item_menu_template">
+            <li>{{nom}}</li>
+        </template>
+
+       <script src='script.js'></script><!-- le travail à réaliser est à rédiger dans ce fichier-->
+       
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tu mourras moins bête</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+
+    <header>
+        <h1>Comment fonctionnent les vaccins ?</h1>
+        <h5>Source : Le Monde - Gary Dagorn</h5>
+        <nav>
+          <ul>
+            <li>
+              <a data-id="principe" href="#">Home</a>
+            </li>
+            <li><a href="#">Les vaccins à virus</a>
+              <ul>
+                <li><a data-id="virus-attenue" href="#">Les vaccins à virus atténué</a></li>
+                <li><a data-id="virus-inactive" href="#">Les vaccins à virus inactivé</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Les vaccins à vecteur viral</a>
+              <ul>
+                <li><a data-id="viral-repliquant" href="#">Les vaccins à vecteur viral répliquant</a></li>
+                <li><a data-id="viral-non-repliquant" href="#">Les vaccins à vecteur viral non répliquant</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Les vaccins à protéines</a>
+              <ul>
+                <li><a data-id="unite-proteique" href="#">Les vaccins à sous-unité protéique</a></li>
+                <li><a data-id="particules-pseudovirales" href="#">Les vaccins à particules pseudovirales</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Les vaccins à matériel génétique</a>
+              <ul>
+                <li><a data-id="vaccins-adn" href="#">Les vaccins à ADN</a></li>
+                <li><a data-id="vaccins-arn" href="#">Les vaccins à ARN</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+       <!-- le contenu dynamique sera placé ici -->
+    </section>
+
+    <!-- template pour la home page-->
+    <template id="home-template"> 
+        <div>
+            <h2>{{titre}}</h2>
+            {{sections}}
+        </div>
+    </template>
+
+    <!-- sous-template pour générer les sections de la home page -->
+    <template id="section-home-template"> 
+        <section>
+            <div class="illustration">
+                <img src="{{url}}" alt="illustration">
+            </div>
+            <div class="commentaire">
+                <p>{{texte}}</div>
+        </section>
+    </template>
+
+    <!-- template pour tous les contenus, hors home page -->
+    <template id="article-template">
+        <article>
+            <div class="column">
+                <img src="{{url}}" alt="illustration">
+            </div>
+            <div class="column">
+                <h3>{{titre}}</h3>
+                {{paragraphes}}
+                <div class="exemple">
+                    <span>Exemples : </span> {{exemples}}
+                </div>
+            </div>
+        </article>
+    </template>
+
+    <!-- sous-template pour les contenus (si minimaliste que l'on pourrait s'en passer, mais c'est pour garder une homogénéïté de traitement) -->  
+    <template id="paragraphe-article-template"> 
+        <p>{{texte}}</p>
+    </template>
+
+
+
+
+    <script src='script.js'></script><!-- le travail à réaliser est à rédiger dans ce fichier-->
+       
+    </body>
+</html>
